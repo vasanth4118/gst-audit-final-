@@ -1,0 +1,471 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: url(images/aboutus.jpg);
+    color: white;
+    
+}
+.overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 20px 100px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.menu {
+    display: flex;
+    gap: 20px;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+}
+.menu a:hover {
+    color: #ff6600;
+}
+.menu-toggle {
+    display: none;
+    }
+.hero-text {
+    margin-top: 10%;
+    max-width: 700px;
+    text-align: justify;
+}
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+.hero-text p {
+    margin-top: 10px;
+    font-size: 18px;
+    opacity: 0.8;
+}
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.main {
+    display: flex;
+    width: 100%;
+    max-width: 1560px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.image-section {
+    flex: 1;
+}
+.image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.text-section {
+    flex: 1;
+    padding: 20px;
+    text-align: justify;
+}
+.text-section h1 {
+    color: #1e3a5f;
+    font-size: 28px;
+}
+.text-section h2 {
+    color: #a67c52;
+    font-size: 18px;
+}
+.text-section p {
+    color: #333;
+    line-height: 1.6;
+}
+.text-section strong {
+    font-size: 20px;
+    color: black;
+}
+.hero-section {
+    position: relative;
+    height: 85vh;
+    background: url('images/bgimg.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+.content {
+    position: relative;
+    max-width: 800px;
+    padding: 20px;
+}
+.quote {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.subtext {
+    margin-top: 40px;
+    font-size: 1rem;
+}
+.team-section {
+    max-width: 1600px;
+    margin:auto;
+    height: 60vh;
+    text-align: left;
+    background-color: white;
+}
+.team-header {
+    margin-bottom: 30px;
+}
+.team-header h2 {
+    font-size: 2.5rem;
+    color: #0d1b2a;
+    margin-left: 35px;
+}
+.team-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 40px;
+}
+.team-member {
+    position: relative;
+    width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.team-member img {
+    width: 100%;
+    height: 30vh;
+    display: block;
+}
+.member-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    text-align: left;
+    
+}
+.member-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+.member-info p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    color: #e6ad67;
+    border-bottom: 1px solid #ddd;
+}
+footer {
+    border-top: 1px solid #ddd;
+    background: white;
+    color: black;
+    padding: 50px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    font-size: 15px;
+    }
+    .footer-leftcolumn {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    }
+    .footer-leftcolumn a {
+    text-decoration: none;
+    color: #b38b6d;
+    font-weight: 400;
+    }
+    .footer-rightcolumn {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: right;
+    }
+    .footer-rightcolumn a {
+    text-decoration: none;
+    color: #b38b6d;
+    font-weight: 400;
+    }    
+    .footer-center {
+    text-align: center;
+    }
+    .footer-center p {
+    margin-bottom: 10px;
+    }
+    .social-icons a {
+    margin: 0 5px;
+    color: black;
+    font-size: 20px;
+    }
+    @media (max-width: 480px) {
+    .main {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .image-section {
+        flex: none;
+        width: 100%;
+    }
+
+    .text-section {
+        flex: none;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .text-section h1 {
+        font-size: 24px;
+    }
+
+    .text-section h2 {
+        font-size: 16px;
+    }
+
+    .text-section p {
+        font-size: 14px;
+    }
+
+    .hero-section {
+        height: 60vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .quote {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .subtext {
+        font-size: 0.9rem;
+        margin-top: 20px;
+    }
+
+    .team-section {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .team-header h2 {
+        font-size: 2rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .team-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 100%; /* Adjust width to fit the grid */
+        max-width: 180px; /* Optional: Limit max width */
+        margin: auto;
+    }
+
+    .team-member img {
+        height: 25vh;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .member-info {
+        padding: 10px;
+    }
+
+    .member-info h3 {
+        font-size: 1rem;
+    }
+
+    .member-info p {
+        font-size: 0.8rem;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .logo {
+        font-size: 20px;
+        font-weight: bold;
+        flex: 1; /* Makes it take available space */
+        text-align: left;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        color: white;
+    }
+    .menu a:hover {
+        color: #ff6600;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.95);
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding-top: 100px;
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 999;
+    }
+
+    .menu.active {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu a {
+        display: block;
+        padding: 15px;
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .menu a:hover {
+        color: #ff6600;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+        color: white;
+        background: none;
+        border: none;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    /* Dark overlay effect */
+    .menu-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 998;
+    }
+
+    .menu-open .menu-overlay {
+        display: block;
+    }
+
+    /* Hide everything else when menu is open */
+    .menu-open .hero-text,
+    .menu-open .contact-container,
+    .menu-open .map-container,
+    .menu-open footer {
+        display: none;
+    }
+    .hero-text {
+        margin-top: 30%;
+
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+        text-align: left;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .btn {
+        align-items: left;
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+    .text-section p{
+        text-align: justify;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .footer-leftcolumn{
+        display: none;
+    }
+    .footer-rightcolumn {
+        text-align: center;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+}
